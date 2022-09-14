@@ -10,6 +10,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | QR code component</title>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -19,6 +25,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        font-family: "Outfit", sans-serif;
       }
 
       body {
@@ -31,20 +38,12 @@
       }
 
       .qr_container {
-        width: 100%;
-        flex: 1;
+        padding: 32px 16px;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-      }
-
-      .qr_card {
-        padding: 16px;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        border-radius: 16px;
+        border-radius: 24px;
         background-color: #fff;
       }
 
@@ -55,8 +54,8 @@
       }
 
       .text_container {
-        padding: 12px;
-        max-width: 240px;
+        padding: 0 16px;
+        max-width: 280px;
       }
 
       h3,
@@ -82,18 +81,15 @@
   </head>
   <body>
     <div class="qr_container">
-      <div class="qr_card">
-        <img src="./images/image-qr-code.png" alt="qr_image" />
-        <div class="text_container">
-          <h3>Improve your front-end skills by building projects.</h3>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
+      <img src="./images/image-qr-code.png" alt="qr_image" />
+      <div class="text_container">
+        <h3>Improve your front-end skills by building projects.</h3>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
       </div>
     </div>
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
